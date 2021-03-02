@@ -1,0 +1,31 @@
+body {
+    min-width: 205px;
+}
+
+.header {
+    min-width: 205px;
+}
+
+@media screen and (max-width:1085px) {
+    .form-control-plaintext {
+        width: 155px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .login {
+        width: 304px;
+    }
+}
+
+@media screen and (max-width:443px) {
+    .login {
+        width: 68%;
+    }
+}
+
+@media screen and (max-width:289px) {
+    .login {
+        width: 196.5px;
+    }
+}

@@ -1,0 +1,28 @@
+body {
+    min-width: 205px;
+}
+
+.header {
+    min-width: 205px;
+}
+
+@media screen and (max-width:750px) {
+    .login {
+        width: 304px;
+    }
+}
+
+@media screen and (max-width:443px) {
+    .login {
+        width: 68%;
+    }
+    .form-control-plaintext {
+        width: 110px;
+    }
+}
+
+@media screen and (max-width:289px) {
+    .login {
+        width: 196.5px;
+    }
+}

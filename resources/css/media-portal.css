@@ -1,0 +1,47 @@
+body {
+    min-width: 241px;
+}
+
+.header {
+    min-width: 241px;
+}
+
+@media screen and (max-width:780px) {
+    .card {
+        width: 45%;
+        bottom: 50px;
+    }
+    .posters {
+        top: 97px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .header {
+        display: block;
+        text-align: center;
+    }
+    .posters {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:476px) {
+    .posters {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .posters {
+        display: block;
+        padding: 60px 5% 30px 5%;
+    }
+    .card {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 7px;
+    }
+}

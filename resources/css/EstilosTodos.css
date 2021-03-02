@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+:root {
+    --colorFondoDeTodo: hsl(0, 10%, 69%);
+    --colorHeaderFondo: hsl(0, 2%, 18%);
+    --colorHeaderLinkHover: hsl(0, 0%, 35%);
+    --colorCardFondo: hsl(0, 0%, 85%);
+    --colorCardHoverFondo: hsla(0, 0%, 14%, 0.651);
+    --colorLink: (white);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: var(--colorHeaderFondo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+}
+
+.header h1 {
+    padding: 10px;
+    margin: 0;
+    font-size: 50px;
+    color: white;
+    transform: skewX(-20deg);
+}
+
+.header a {
+    text-decoration: none;
+    padding: 0%;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header a:hover {
+    color: var(--colorHeaderLinkHover);
+}
+
+.footer {
+    background-color: var(--colorHeaderFondo);
+    color: white;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    padding: 0 5px;
+    letter-spacing: 2px;
+}

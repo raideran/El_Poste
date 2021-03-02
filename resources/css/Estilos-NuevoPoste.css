@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+[type="button"]{
+    border-style: none;
+    width: 150px;
+    height: 50px;
+    margin: 0 25px;
+}
+.todo{
+    background-color: var(--colorFondeDeTodo);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+}
+    /**Area de los contenidos*/
+    .login{
+        background-color: var(--colorCardFondo);
+        width: 100%;
+        margin-top: 0;
+        flex-grow: 1;
+    }
+    .login h3{
+        margin: 10px 0 20px 30px;
+    }
+        .crearPoste {
+            display: grid;
+            grid-template-columns: 15% 85%;
+            grid-row-gap: 40px;
+            padding: 0 50px;
+            margin: 20px 20px;
+        }
+            .form-control:hover{
+                border: solid 1px green;
+            }
+            .btn{
+                width: 180px;
+            }
+    /**Area del footer*/
+.footer{
+    background-color: var(--colorHeaderFondo);
+    color: white;
+    text-align: center;
+}
+    .footer a{
+        text-decoration: none;
+        color: white;
+        padding: 0 5px;
+        letter-spacing: 2px;
+    }
+    /**Area de los media**/
+@media screen and (max-width: 700px){
+    .crearPoste {
+        grid-template-columns: 100%;
+        grid-row-gap: 10px;
+    }
+    .usar {
+        width: 80%;
+    }
+    .check {
+        width: 10%; 
+    }
+}
+@media screen and (max-width: 400px){
+    .crearPoste{
+        padding: 0 10px;
+    }
+    label {
+        margin-top: 20px;    
+    }
+    .usar {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 320px){
+    .crearPoste{
+        margin: 20px 0;
+    }
+}
+@media screen and (max-width:295px){
+    .logo h1{
+        font-size: 40px;
+    }
+}

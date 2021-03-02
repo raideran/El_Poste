@@ -1,0 +1,37 @@
+@media screen and (max-width:780px) {
+    .card {
+        width: 45%;
+    }
+    .posters {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .header {
+        display: block;
+        text-align: center;
+    }
+    .posters {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:476px) {
+    .posters {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .posters {
+        display: flex;
+        padding: 60px 5% 30px 5%;
+    }
+    .card {
+        width: 80%;
+        margin: 5% 10%;
+        margin-bottom: 7px;
+    }
+}

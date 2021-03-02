@@ -1,0 +1,67 @@
+:root{
+    --colorFormHoverBorder: hsl(271, 100%, 25%);
+    --fondoRegistro: hsl(0, 0%, 35%);
+    --colorLetraRegistro: hsl(0, 0%, 0%);
+}
+
+.todo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+}
+    .contenido{
+        display: flex;
+        flex: auto;
+        flex-direction: row-reverse;
+    }
+        .login{
+            flex: 0 0 30%;
+            padding: 5%;
+            background-color: var(--colorCardFondo);
+        }
+
+        .login .btn{
+            margin: 5% 0;
+        }
+        .login a{
+            text-decoration: none;
+            color: var(--colorHeaderFondo);
+            text-transform: uppercase;
+        }
+        .login a:hover{
+            color: var(--colorFormHoverBorder);
+        }
+        .log-img{
+            display: flex;
+            background-color: hsla(200, 70%, 90%, .8);
+            flex: 0 0 70%;
+        }
+        .log-img p{
+            align-self: center;
+            padding: 100px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+        }
+    .footer{
+        text-align: center;
+        background-color: var(--colorHeaderFondo);
+        color: #fff;
+    }
+@media screen and (max-width:570px){
+        .login, .log-img{
+            display: block;
+            width: 100%;
+        }
+}
+@media screen and (max-width:600px){
+        .contenido{
+            flex-direction: column;
+        }
+}
+
+@media screen and (max-width:295px){
+    .logo h1{
+        font-size: 40px;
+    }
+}

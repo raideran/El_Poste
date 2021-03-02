@@ -1,0 +1,10 @@
+:root{
+    --heightPoste: calc(100vh - 104px);
+}
+
+.poste{
+    height: var(--heightPoste);
+}
+.footer p{
+    margin: 0;
+}

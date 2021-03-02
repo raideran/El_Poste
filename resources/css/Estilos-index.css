@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+.todo {
+    min-width: 295px;
+    background-color: var(--colorFondeDeTodo);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.home-icon {
+    width: 20px;
+    height: 18px;
+}
+
+.link-p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+/**Menu de navegacion*/
+.header {
+    z-index: 10000;
+}
+
+.nav-bar {
+    background-color: var(--colorHeaderFondo);
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.menu-bar,
+.menu-btn {
+    z-index: 1000;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.menu-btn:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.menu1 {
+    margin-bottom: 0;
+}
+
+.menu1 a,
+.menu2 a {
+    display: flex;
+    text-decoration: none;
+    background-color: transparent;
+    margin: 0 20px;
+    color: white;
+    padding: 10px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font: weight 800;
+}
+
+.menu1>li {
+    display: inline-block;
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+    z-index: 10;
+}
+
+.menu1>li:hover ul {
+    display: block;
+    height: 200px;
+    border-top: none;
+    overflow: auto;
+}
+
+.menu1 li {
+    background-color: var(--colorHeaderFondo);
+}
+
+.menu1 li:hover,
+.menu2 li:hover {
+    background-color: var(--colorHeaderLinkHover);
+}
+
+.menu2 {
+    margin: 0 0 0 auto;
+}
+
+.menu2>li {
+    display: inline-block;
+    margin: 0;
+}
+
+/**Area de los contenidos*/
+.posters {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 100vh;
+}
+
+.card-body {
+    overflow: hidden;
+}
+
+.card {
+    width: 31.3%;
+    height: auto;
+    background-color: var(--colorCardFondo);
+    margin: 20px auto;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 60%;
+    padding: 0%;
+    align-self: center;
+}
+
+.card:hover {
+    background-color: var(--colorCardHoverFondo);
+    color: white;
+}
+
+.opciones {
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0%;
+}
+
+.opciones p {
+    margin-left: 3%;
+}
+
+.btn-primary {
+    align-self: center;
+    width: 80%;
+    height: 5%;
+}
+
+/**Area del footer*/
+.footer {
+    background-color: var(--colorHeaderFondo);
+    color: white;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    padding: 0 5px;
+    letter-spacing: 2px;
+}
+
+/**Media queries*/
+@media screen and (max-width: 1000px) {
+
+    .menu1 a,
+    .menu2 a {
+        letter-spacing: normal;
+        margin: 0;
+    }
+
+    .menu2 li {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .card {
+        height: 20%;
+        margin: 10px auto;
+        padding: 0;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        height: 20%;
+        margin: 20px auto;
+        padding: 0;
+    }
+
+    .card-img-top {
+        height: 168px;
+    }
+
+    .menu-bar {
+        position: sticky;
+        top: 0;
+        display: block;
+        width: 100%;
+        background-color: var(--colorHeaderFondo);
+        z-index: 100;
+    }
+
+    .menu-btn {
+        display: block;
+        color: white;
+        font-weight: bold;
+        background-color: var(--colorHeaderFondo);
+        padding: 10px;
+        text-transform: uppercase;
+        border: none;
+    }
+
+    .nav-bar {
+        width: 60%;
+        height: 100%;
+        position: fixed;
+        margin: 0;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        left: -100%;
+        /*left: 0%;*/
+    }
+
+    /** Esto apunta a los submenus, cuando se hace hover en ellos*/
+    .menu1>li:hover ul {
+        display: none;
+        height: auto;
+        border-top: none;
+    }
+
+    .submenu {
+        width: 100%;
+        position: relative;
+    }
+
+    .submenu li {
+        background-color: hsl(0, 2%, 10%);
+    }
+
+    .menu1 {
+        margin-top: 130px;
+    }
+
+    .menu2 {
+        margin: 0;
+    }
+
+    .nav-bar li {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid rgba(116, 115, 115, 0.904);
+    }
+}

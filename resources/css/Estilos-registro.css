@@ -1,0 +1,81 @@
+body,
+.header,
+.footer,
+.login {
+    min-width: 205px;
+}
+
+.todo {
+    background-color: var(--colorFondoDeTodo);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login {
+    background-color: var(--colorCardFondo);
+    width: 100%;
+    margin-top: 0;
+    flex-grow: 1;
+}
+
+.login h3 {
+    margin: 10px 0 20px 30px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-row-gap: 70px;
+    padding: 0 50px;
+    margin: 20px 20px;
+}
+
+.form-control:hover {
+    border: solid 1px green;
+}
+
+.btn {
+    width: 180px;
+}
+
+.form p {
+    margin: 0;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: var(--colorHeaderFondo);
+    color: #fff;
+}
+
+
+/*Media queries*/
+
+@media screen and (max-width: 700px) {
+    .form {
+        grid-template-columns: 100%;
+        grid-row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .form {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width:295px) {
+    .logo h1 {
+        font-size: 40px;
+    }
+}
